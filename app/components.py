@@ -321,7 +321,7 @@ def structure_chart(p: dict, f: dict, is_phish: bool):
             y=alt.Y("Parameter:N", sort="-x", title=None, axis=alt.Axis(labelColor=p["text"], domain=False, ticks=False)),
             tooltip=["Parameter", "Nilai"],
         )
-        .properties(height=200, background=p["chart_bg"])
+        .properties(height=260, background="transparent")
         .configure_view(strokeWidth=0)
     )
 
